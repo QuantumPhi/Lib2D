@@ -1,7 +1,7 @@
 package game.entity;
 
 import game.entity.properties.Gravity;
-import game.util.Vector2D;
+import game.util.math.Vector2D;
 
 public abstract class Entity implements Gravity {
     
@@ -12,16 +12,14 @@ public abstract class Entity implements Gravity {
     public Entity() { 
         this(0, 0); 
     }
-    public Entity(boolean _grav) { 
-        this();
-        grav = _grav; 
-    }
+
     public Entity(int _x, int _y) { 
         x = _x;
         y = _y;
         init();
         velocity = new Vector2D(0, 0);
     }
+    
     public Entity(int _x, int _y, boolean _grav) { 
         this(_x,_y);
         init();

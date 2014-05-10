@@ -1,4 +1,4 @@
-package game.util;
+package game.util.math;
 
 public class Vector2D {
     
