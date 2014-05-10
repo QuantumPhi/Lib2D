@@ -1,4 +1,4 @@
 Lib2D
 =====
 
-A 2D Java game framework library.
+A Java library meant to aid in game physics.
