@@ -13,4 +13,19 @@ Key:
     [x] Create TODO.md
     [x] Create rudimentary game framework
     [x] Create rudimentary physics engine
-    [ ]  
+    [ ] Expand functionality of framework
+    [ ] Create more advanced physics engine
+    [ ] Release test builds
+  
+  Objectives:
+    - Make the code modular: This library
+        should be able to work with other
+        game engines.
+    - Make the code independent: This library
+        is geared towards overall game framework
+        and physics, not rendering. Thus, it
+        should not rely on other libraries like
+        LWJGL, Slick2D, or LibGDX
+    - Make the code lightweight: This library
+        should not be bloated. All code should
+        be as lightweight as possible.
