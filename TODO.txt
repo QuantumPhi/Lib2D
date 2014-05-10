@@ -1,0 +1,16 @@
+TODO
+====
+
+Key:
+  [x] -> Complete
+  [/] -> Partial
+  [ ] -> Incomplete
+
+  Code:
+    [x] Create repository
+    [x] Create README.md
+    [x] Create LICENSE.md
+    [x] Create TODO.md
+    [x] Create rudimentary game framework
+    [x] Create rudimentary physics engine
+    [ ]  
