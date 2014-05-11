@@ -1,5 +1,6 @@
 package game;
 
+import game.frame.GameContainer;
 import game.util.exception.Lib2DException;
 
 public abstract class Game {

@@ -36,6 +36,8 @@ public class ImageMask {
     }
     
     public boolean intersects(ImageMask other) {
+        if(other == null)
+            return false;
         for(int i = 0; i < width; i++)
             for(int j = 0; j < height; j++)
                 for(int k = 0; k < other.getWidth(); k++)

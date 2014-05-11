@@ -1,11 +1,13 @@
 package game.entity;
 
 import game.entity.properties.Gravity;
+import game.util.image.Sprite;
 import game.util.math.Vector2D;
 
 public abstract class Entity implements Gravity {
     
     protected int x, y;
+    protected Animation anim;
     protected Vector2D velocity;
     protected boolean grav;
     
@@ -32,4 +34,6 @@ public abstract class Entity implements Gravity {
     protected void updateValues(int delta) {
         y = grav ? y-(int)Math.round(((double)delta / 100) * G * multiplier) : y;
     }
+    
+    public Sprite getSprite() { return sprite; }
 }
