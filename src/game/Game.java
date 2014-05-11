@@ -1,8 +1,19 @@
 package game;
 
-public interface Game {
+import game.util.exception.Lib2DException;
+
+public abstract class Game {
     
-    void init();
-    void update();
-    void render();
+    protected GameContainer container;
+    
+    public Game(GameContainer pcontainer) throws Lib2DException {
+        if(pcontainer != null)
+            container = pcontainer;
+        else
+            throw new Lib2DException("Container not properly initialized.");
+    }
+    
+    abstract void init();
+    abstract void update();
+    abstract void render();
 }
