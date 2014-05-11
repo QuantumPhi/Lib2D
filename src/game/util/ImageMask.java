@@ -15,9 +15,9 @@ public class ImageMask {
     protected boolean[][] mask;
     protected BufferedImage image;
     
-    public ImageMask(Image _image, float _scale) {
-        image = (BufferedImage) image;
-        scale = _scale;
+    public ImageMask(Image pImage, float pScale) {
+        image = (BufferedImage) pImage;
+        scale = pScale;
         init();
     }
     

@@ -13,17 +13,17 @@ public abstract class Entity implements Gravity {
         this(0, 0); 
     }
 
-    public Entity(int _x, int _y) { 
-        x = _x;
-        y = _y;
+    public Entity(int px, int py) { 
+        x = px;
+        y = py;
         init();
         velocity = new Vector2D(0, 0);
     }
     
-    public Entity(int _x, int _y, boolean _grav) { 
-        this(_x,_y);
+    public Entity(int px, int py, boolean pgrav) { 
+        this(px,py);
         init();
-        grav = _grav; 
+        grav = pgrav; 
     }
     
     public abstract void init(); 
