@@ -7,8 +7,12 @@ public class Animation {
     protected Sprite[] frames;
     protected ImageMask[] masks;
     
+    public Animation(Sprite[] pframes) {
+        frames = pframes;
+    }
+    
     public Animation(SpriteSheet sprites) {
-        frames = sprites.getAnimation();
+        this(sprites.getAnimation(1.0f));
     }
     
     private void init() {

@@ -13,8 +13,9 @@ Key:
     [x] Create TODO.md
     [x] Create rudimentary game framework
     [x] Create rudimentary physics engine
-    [ ] Expand functionality of framework
+    [/] Expand functionality of framework
     [ ] Create more advanced physics engine
+    [ ] Clean update tree
     [ ] Release test builds
   
   Objectives:

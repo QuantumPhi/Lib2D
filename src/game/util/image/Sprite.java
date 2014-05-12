@@ -39,8 +39,12 @@ public class Sprite {
     public int getY() { return y; }
     public int getWidth() { return image.getWidth(); }
     public int getHeight() { return image.getHeight(); }
+    public float getScale() { return scale; }
     public Image getImage() { return image; }
     public ImageMask getMask() { return mask; }
     
+    public void setX(int px) { x = px; }
+    public void setY(int py) { y = py; }
+    public void setScale(float pscale) { scale = pscale; init(); }
     public void setMask(ImageMask pmask) { mask = pmask; }
 }

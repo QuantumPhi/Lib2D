@@ -19,8 +19,8 @@ public class Object extends JPanel {
         setLayout(null);
     }
     
-    public Object(Entity entity) {
-        this(entity.getSprite());
+    public Object(Entity entity, int index) {
+        this(entity.getSprite(index));
     }
     
     public void update(Sprite psprite) {
